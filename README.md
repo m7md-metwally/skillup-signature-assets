@@ -5,3 +5,5 @@ they have to stay at the same addresses for as long as emails that use them exis
 
 - `2027/` holds the images of the 2027 design. A new design gets a new folder, so older
   emails keep showing their own images.
+- The folder is published on Cloudflare with `npx wrangler deploy` (settings in
+  `wrangler.jsonc`, cache headers in `_headers`).
