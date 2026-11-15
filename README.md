@@ -10,6 +10,8 @@ they have to stay at the same addresses for as long as emails that use them exis
   goes into a new sub-folder instead, and the signature is pointed at it:
   - `2027/` first build.
   - `2027/v2/` same pictures, with their pixel density stored in the file. Classic Outlook
-    needs it to give the header its right height. This is the folder the signature uses.
+    needs it to give the header its right height.
+  - `2027/v3/` the header with a larger badge (108px instead of 90px), so that it reads on
+    phones. The other pictures are the same as in v2. This is the folder the signature uses.
 - The folder is published on Cloudflare with `npx wrangler deploy` (settings in
   `wrangler.jsonc`, cache headers in `_headers`).
