@@ -14,8 +14,9 @@ they have to stay at the same addresses for as long as emails that use them exis
   - `2027/v3/` the header with a larger badge (108px instead of 90px), so that it reads on
     phones. The other pictures are the same as in v2. This is the folder the signature uses.
     `header-desktop-left.png` and `header-desktop-left-wide.png` were added later: two
-    other arrangements of the same header, with the badge on the left. The signature now
-    uses `header-desktop-left-wide.png`; `header-desktop.png` (badge in the middle) and
-    `header-desktop-left.png` stay for the mail that was sent with them.
+    other arrangements of the same header, with the badge on the left. The signature uses
+    either `header-desktop.png` (badge in the middle) or `header-desktop-left-wide.png`
+    until the company has chosen between them; `header-desktop-left.png` was dropped and
+    stays only for the mail that was sent with it.
 - The folder is published on Cloudflare with `npx wrangler deploy` (settings in
   `wrangler.jsonc`, cache headers in `_headers`).
