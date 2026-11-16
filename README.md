@@ -13,5 +13,8 @@ they have to stay at the same addresses for as long as emails that use them exis
     needs it to give the header its right height.
   - `2027/v3/` the header with a larger badge (108px instead of 90px), so that it reads on
     phones. The other pictures are the same as in v2. This is the folder the signature uses.
+    `header-desktop-left.png` and `header-desktop-left-wide.png` were added later: two
+    other arrangements of the same header, with the badge on the left, to compare with the
+    centred one. Adding a file does not change the ones already there.
 - The folder is published on Cloudflare with `npx wrangler deploy` (settings in
   `wrangler.jsonc`, cache headers in `_headers`).
